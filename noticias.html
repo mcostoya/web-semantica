@@ -1,0 +1,112 @@
+<!--
+Autor: Costoya Fernández, Miriam
+Fecha: 1/12/2023
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio web
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Noticias Novo Cinema Galego">
+        <meta name="keywords" content="Cine, Películas">
+        <title>Noticias - Novo cinema galego</title>
+
+        <!-- Hoja de estilo enlazada y tipografía de letra -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/estilos.css">
+    </head>
+
+    
+    <body>
+        <!-- Encabezado de la página con imagen y enlace a la página de inicio -->
+        <header id="header-background">
+            <a href="index.html">
+                <img src="img/header.jpg" alt="Imagen de fondo" id="inicio">
+                <h1>Novo Cinema Galego</h1>
+            </a>
+        </header>
+        <!-- Sección principal de la página donde se incluyen menús de navegación y información central-->
+        <section id="seccion">
+            <!-- Menú de navegación -->
+            <nav>
+                <a href="peliculas.html">Películas</a>
+                <a href="directores.html">Directores</a>
+                <a href="noticias.html">Noticias</a>
+            </nav>       
+
+        
+            <!-- Contenido principal con una sección por noticia y con enlaces en botones -->
+            <main>
+                <section class="noticia">
+                    <h3>Descubre el apasionante Novo Cinema Galego</h3>
+                    <article>
+                        <img class="imagen-float" src="img/todos-vosotros-sois-capitanes.jpg" alt="Largometrajes">
+                        <h4>Haberlo haylo y es de una excelentísima calidad</h4>
+                        <p>
+                        Bajo el concepto de Novo Cinema Galego han corrido ríos de tinta en la última década, tanto negando como afirmando su existencia. 
+                        La plataforma Novo Cinema Galego, que ya celebra su décimo aniversario, abre al público durante estos días un programa de unas 20 horas 
+                        con muchas de las obras que han creado su reputación. Ahora es el momento ideal para que los espectadores establezcan su propia opinión.
+                        </p>
+                    </article>
+                    <a href="https://www.fotogramas.es/noticias-cine/a31842156/descubre-apasionante-novo-cinema-galego-agadic/" target="_blank">
+                        <button onclick="mostrarContenido('leermas')">Leer más</button>
+                    </a>
+                </section>
+
+                <section class="noticia">
+                    <h3>Novo-Novo Cinema Galego</h3>
+                    <article>
+                        <img class="imagen-float" src="img/0930_kul_koldo1.jpg" alt="Largometrajes">
+                        <p>
+                            Se dirá que la guipuzcoana Jaione Camborda (1985) pertenece al Novo Cinema Galego y, si bien la realizadora viene nutriéndose del imaginario 
+                            fantasmagórico de la tradición de Eloy Domínguez Serén, Diana Toucedo o Lois Patiño, cabe replantearse si la etiqueta no nos va un poco justa, ya. 
+                            ‘O corno’ de Camborda - en conjunción con películas como ‘Matria’ de Álvaro Gago - hoy puede abrirnos las puertas a entender mejor aquello que vendrá 
+                            después del Novo Cinema Galego: un cine aterrado, femenino y de cuerpos, no de leyendas.
+                        </p>
+                    </article>
+                    <a href="https://www.xunta.gal/notas-de-prensa/-/nova/79295/novo-cinema-galego-protagoniza-una-programacion-especial-bolzano-film-festival" target="_blank">
+                        <button onclick="mostrarContenido('leermas')">Leer más</button>
+                    </a>
+                </section>
+
+                <section class="noticia">
+                    <h3>El Novo Cinema Galego protagoniza una programación especial en el Bolzano Film Festival Bozen de Italia</h3>
+                    <article>
+                        
+                        <h4>La 36ª edición del certamen le dedica a Galicia su sección Focus Europa con las proyecciones en versión original gallega de seis filmes de 
+                            Oliver Laxe, Lois Patiño, Eloy Enciso, Diana Toucedo, Helena Girón y Samuel M. Delgado, y Xacio Baño</h4>
+                        <p>
+                        Santiago de Compostela, 17 de abril de 2023 La corriente del Novo Cinema Galego será objeto de su primer foco en Italia en el marco de la programación 
+                        del 36º Bolzano Film Festival Bozen, que cuenta con la colaboración de la Xunta para concederle a Galicia el protagonismo de su sección Focus Europa. 
+                        Así, el conocido certamen de esta ciudad del norte de Italia ofrecerá del 19 a 23 de abril una programación especial de seis largometrajes que ejemplifican 
+                        la vertiente más independiente y vanguardista del audiovisual gallego, además de una mesa redonda que ahondará en sus características y elementos diferenciales.
+                        </p>
+                    </article>
+                    <a href="https://www.xunta.gal/notas-de-prensa/-/nova/79295/novo-cinema-galego-protagoniza-una-programacion-especial-bolzano-film-festival" target="_blank">
+                        <button onclick="mostrarContenido('leermas')">Leer más</button>
+                    </a>
+                </section>
+            </main>
+            <!-- Barra lateral con enlaces a categorias -->
+            <aside id="categorias">
+                <article><a href="largometraxes.html">Largometrajes</a></article>
+                <article><a href="curtametraxes.html">Cortos</a></article>
+                <article><a href="animación.html">Animación</a></article>
+            </aside>
+
+        </section>
+          <!-- Pie de página con información de autoría y enlace de contacto -->
+        <footer>
+            
+            <p>Autoria y licencias: Página realizada por Miriam Costoya con fines educativos. Todos los derechos de imágenes están reservados y pertenecen a sus autores</p>
+
+            <a href="contacto.html">Contacto</a>
+        </footer>
+    </body>
+</html>

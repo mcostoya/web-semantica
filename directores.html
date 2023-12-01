@@ -1,0 +1,80 @@
+<!--
+Autor: Costoya Fernández, Miriam
+Fecha: 1/12/2023
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio web
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Directores Novo Cinema Galego">
+        <meta name="keywords" content="Cine, Películas">
+        <title>Directores - Novo cinema galego</title>
+
+        <!-- Hoja de estilo enlazada y tipografía de letra -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/estilos.css">
+    </head>
+
+    
+    <body>
+        <!-- Encabezado de la página con imagen y enlace a la página de inicio -->
+        <header id="header-background">
+            <a href="index.html">
+                <img src="img/header.jpg" alt="Imagen de fondo" id="inicio">
+                <h1>Novo Cinema Galego</h1>
+            </a>
+        </header>
+        <!-- Sección principal de la página donde se incluyen menús de navegación y información central-->
+        <section id="seccion">
+            <!-- Menú de navegación -->
+            <nav>
+                <a href="peliculas.html">Películas</a>
+                <a href="directores.html">Directores</a>
+                <a href="noticias.html">Noticias</a>
+            </nav>      
+        
+            <main>
+                <!-- Sección principal de la página con información sobre el director y link externo -->
+                <section class="director">
+                    <h2>Lois Patiño</h2>
+                    <article>
+                        <img class="imagen-float" src="img/Lois_Patiño.jpg" alt="Lois Patiño">            
+                        <p class="contenido-director">
+                            <strong>Nacimiento:</strong> 1983 (40 años), Vigo. <br>
+                            <strong>Padres:</strong> Menchu Lamas, Antón Patiño Pérez. <br>
+                            <strong>Nominaciones:</strong> Prize for the Best Emerging Director... <br>
+                            <strong>Educación:</strong> Universidad Pompeu Fabra <br>
+                            <strong>Premios:</strong> Prize for the Best Emerging Director, Premio Cóndor de Plata al Mejor Cortometraje... <br>
+                            <strong>Filmografía:</strong> Montaña en sombra (2012), <a href="https://www.filmin.es/pelicula/costa-da-morte" target="_blank">Costa da Morte (2013)</a>, <a href="https://www.filmin.es/pelicula/lua-vermella" target="_blank">Lúa Vermella (2020)</a>.
+                        </p>
+                    </article>
+                    <!-- Enlace externo para obtener más información sobre el director-->
+                    <a href="https://loispatino.es/" target="_blank">
+                        <button class="leer-mas-btn">Saber más</button>
+                    </a>
+                </section>               
+            </main>
+             <!-- Barra lateral con enlaces a categorías -->
+            <aside id="categorias">
+                <article><a href="largometraxes.html">Largometrajes</a></article>
+                <article><a href="curtametraxes.html">Cortos</a></article>
+                <article><a href="animación.html">Animación</a></article>
+            </aside>
+
+        </section>
+        <!-- Pie de página con información de autoría y enlace de contacto -->
+        <footer>
+            
+            <p>Autoria y licencias: Página realizada por Miriam Costoya con fines educativos. Todos los derechos de imágenes están reservados y pertenecen a sus autores</p>
+
+            <a href="contacto.html">Contacto</a>
+        </footer>
+    </body>
+</html>

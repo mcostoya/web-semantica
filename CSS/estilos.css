@@ -1,0 +1,373 @@
+/* Estilo para el body */
+body {
+    font-family: 'Carrois Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*Estilo para los emcabezados de las páginas */
+header {
+    position: relative;
+    text-align: center;
+    height: 15em; 
+}
+/* id para dar formato a la imagen de foto usada en el header */
+#header-background img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+/*Formato titulo de header */
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    font-size: 4.3rem; 
+}
+/* id creado para dar formato a la sección principal que incluye menú de navegación, categorías y parte central de la página */
+#seccion {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+/* se da formato al menú de navegación */
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    background-color:#333; /* Fondo de navegación */
+    color: #fff; /* Texto de navegación */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 1%;
+    box-sizing: border-box; /* Evita que el padding afecte el ancho total */
+}
+/* Formato para los links del menú de navegación */
+nav a {
+    display: block; /* Asegura que cada enlace sea un bloque para ocupar todo el ancho */
+    padding: 1rem 2rem; /* Espaciado interno */
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* Formato para el main */
+main {
+    padding: 1%;
+    margin-bottom: 1em; 
+}
+/* Formato para el menú lateral con enlaces a las categorias */
+aside {
+    background-color: #333; /* Fondo del aside */
+    padding: 1%;
+    box-sizing: border-box; /* Evita que el padding afecte el ancho total */
+    flex-basis: 20%;  
+}
+/* Formato para los enlaces del menú de categorías */
+aside a {
+    display: block; /* Asegura que cada enlace sea un bloque para ocupar todo el ancho */
+    padding: 1rem 2rem; /* Espaciado interno */
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* Formato para el footer con el contenido centrado y en columna */
+footer {
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    margin-top: 1%;
+}
+/* Formato para el parrafo del footer */
+footer p {
+    display: flex;
+    justify-content: baseline;
+}
+/* Formato para aplicar al link de contacto */
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+/* id para el articulo introductorio de la página */
+#introduccion {
+    margin: 2rem;
+    padding: 1%;
+    background-color: #ddd4d4;
+    border-radius: 2rem;
+    overflow: hidden; 
+
+}
+/* Formato float para la imagen de la introducción alineada a la izquierda */
+#introduccion img {
+    float: left;
+    width: 40%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem; /* Espaciado entre la imagen y el texto */
+    margin-right: 1rem;
+    margin-left: 0; 
+}
+/* Formato para los parrafos de la introducción */
+#introduccion p {
+    flex: 1; /* Hace que los párrafos ocupen el espacio restante */
+    padding: 0.5rem;
+    text-align: justify;
+}
+/*Formato aplicadon en la página de contacto para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 400px; /* Establece un ancho máximo para el formulario */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
+    padding: 1em;
+    border: 0.1rem solid #ccc;
+    border-radius: 2rem;
+    box-sizing: border-box;
+}
+/*Estilos de las etiquetas del formulario aplicados en la página de contactos */
+label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    text-align: right;
+    padding: 0.5em;
+}
+/*Estilos para input y area de texto*/
+input, textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra */
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+}
+
+textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+}
+  
+button {
+    margin-left: 1em;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+
+.categoria {
+    position: relative;
+    margin: 2.3rem;
+    text-align: center;
+}
+
+.categoria h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+}
+/* Clase par adar formato a la imagen sobre la que se ha colocado un boton de acceso a las categorias */
+.categoria img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+/* Clase creada para dar formato a los botones incluidos en cada una de las categorías dentro de "peliculas.html" */
+.categoria button {
+     /* Posicionamiento del botón en el centro*/
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    /* Estilos generales del botón */
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 1.5rem 2.5rem; /* Ajusta el tamaño del botón */
+    border-radius: 1rem; /* Ajusta la forma del botón */
+    border: 0.1em solid #fff; /* Añade un borde al botón */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 2rem;
+}
+
+.categoria button:hover {
+    /* Cambia el color de fondo y del texto al pasar el ratón sobre el botón */
+    background-color: #fff; /* Cambia el color de fondo en el hover */
+    color: #333; /* Cambia el color del texto en el hover */
+}
+
+.noticia {
+    margin: 2rem;
+    padding: 1%;
+    background-color: #ddd4d4;
+    border-radius: 1rem;
+    overflow: hidden; /* Para limpiar floats internos */   
+}
+
+.noticia h3 {
+    color: #487474;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.noticia p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.noticia button {
+    float: right;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.noticia button:hover {
+    background-color: #555;
+}
+/* Estilos para secciones de directores */
+.noticia img {
+    float: left;
+    width: 40%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem; /* Espaciado entre la imagen y el texto */
+    margin-right: 1rem;
+    margin-left: 0; 
+}
+
+.director img {
+    float: left;
+    width: 40%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem; 
+    margin-right: 1rem;
+    margin-left: 0; 
+}
+
+.director {
+    margin: 2rem;
+    padding: 1%;
+    background-color: #ddd4d4;
+    border-radius: 10px;
+    overflow: hidden; /* Para limpiar floats internos */
+}
+
+.director h2 {
+    text-align: center;
+    color: #487474;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.director p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+/* Estilos para botón dentro de la ficha del director */
+.director button {
+    float: right;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.director button:hover {
+    background-color: #555;
+}
+/* Estilos palicados en la página que contine artículo sobre una de las peliculas */
+.pelicula {
+    margin: 2rem;
+    padding: 1%;
+    background-color:  #ddd4d4;
+    border-radius: 10px;
+    overflow: hidden;   
+}
+/* Estilo para el video */
+.pelicula iframe {
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo*/
+    height: 315px; /* Ajusta la altura según tus preferencias */
+    display: block; /* Elimina espacios innecesarios alrededor del video */
+    margin: 0 auto; /* Centra el video horizontalmente */
+}
+
+
+.pelicula p {
+    color: #555;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    margin-left: 1.5rem;
+
+}
+
+.pelicula figure img {
+    float: left;
+    width: 40%;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem; /* Espaciado entre la imagen y el texto */
+    margin-right: 1rem;
+    margin-left: 0; /* Cambia el margen izquierdo a 0 */
+}
+
+.pelicula h2 {
+    text-align: center;
+    color: #487474;
+    font-size: 4.5rem;
+    margin-left: 1rem;
+}
+
+.pelicula h3 {
+    text-align: center;
+    color: #487474;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.pelicula h4 {
+    text-align: right;
+    color: #555;
+}
+
+.pelicula article {
+    flex: 1; /* Hace que el texto ocupe el espacio restante en la fila */
+}
+
+.pelicula article div {
+    margin-left: 20px; /* Agrega un margen a la izquierda del contenedor de la ficha técnica */
+    padding: 1rem;
+    justify-content: center;
+    
+}

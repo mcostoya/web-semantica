@@ -1,0 +1,106 @@
+<!--
+Autor: Costoya Fernández, Miriam
+Fecha: 1/12/2023
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio web
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Largometrajes Novo Cinema Galego">
+        <meta name="keywords" content="Cine, Largometrasjes, Galicia">
+        <title>Largometrajes - Novo cinema galego</title>
+
+        <!-- Hoja de estilo enlazada y tipografía de letra -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/estilos.css">
+    </head>
+
+    
+    <body>
+        <!-- Encabezado de la página con imagen y enlace a la página de inicio -->
+        <header id="header-background">
+            <a href="index.html">
+                <img src="img/header.jpg" alt="Imagen de fondo" id="inicio">
+                <h1>Novo Cinema Galego</h1>
+            </a>
+        </header>
+        <!-- Sección principal de la página donde se incluyen menús de navegación y información central-->
+        <section id="seccion">
+            <!-- Menú de navegación -->
+            <nav>
+                <a href="peliculas.html">Películas</a>
+                <a href="directores.html">Directores</a>
+                <a href="noticias.html">Noticias</a>
+            </nav>               
+             <!-- Contenido principal (Peliculas) -->
+            <main>
+                <!-- Pelicula 1 -->
+                <section class="noticia">
+                    <h3>Todos vos sodes capitáns</h3>
+                    <article>
+                        <img class="imagen-float" src="img/Todos_vosotros_sois_capitanes-cartaz.jpg" alt="Todos vos sodes capitáns">
+                        <!-- Detalles técnicos de la película -->
+                        <h4>Ficha técnica</h4>
+                        <p>
+                            <strong>Duración:</strong> 79 min. <br>
+                            <strong>Color:</strong> blanco y negro. <br>
+                            <strong>Formato de grabación:</strong> Digital. <br>
+                            <strong>Lengua original:</strong> Gallego. <br>
+                            <strong>País de producción:</strong> España. <br>
+                            <strong>Producción:</strong> Zeitun Films. <br>
+                            <strong>Año de producción:</strong> 2010. <br>
+                            <strong>Dirigido por:</strong> Oliver Laxe. <br>
+                        </p>
+                    </article>
+                     <!-- Enlace a más información -->
+                    <a href="todosvossodescap.html">
+                        <button onclick="mostrarContenido('masinfo')">Más información</button>
+                    </a>
+                </section>
+                <!-- Película 2 -->
+                <section class="noticia">
+                    <h3>Costa da morte</h3>
+                    <article>
+                        <img class="imagen-float" src="img/Costa-da-Morte-cartaz.jpg" alt="Costa da morte">
+                        <!-- Detalles técnicos de la película -->
+                        <h4>Ficha técnica</h4>
+                        <p>
+                            <strong>Duración:</strong> 81 min. <br>
+                            <strong>Color:</strong> Color. <br>
+                            <strong>Formato de grabación:</strong> Digital. <br>
+                            <strong>Lengua original:</strong> Gallego. <br>
+                            <strong>País de producción:</strong> España. <br>
+                            <strong>Producción:</strong> Zeitun Films. <br>
+                            <strong>Año de producción:</strong> 2013. <br>
+                            <strong>Dirigido por:</strong> Lois Patiño  <br>
+                        </p>
+                    </article>
+                    <a href="https://www.filmin.es/pelicula/costa-da-morte" alt="Costa da morte">
+                        <button onclick="mostrarContenido('masinfo')">Más información</button>
+                    </a>
+                </section>
+            </main>
+            <!-- Barra lateral con enlaces a categorías -->
+            <aside id="categorias">
+                <article><a href="largometraxes.html">Largometrajes</a></article>
+                <article><a href="curtametraxes.html">Cortos</a></article>
+                <article><a href="animación.html">Animación</a></article>
+            </aside>
+
+        </section>
+         <!-- Pie de página con información de autoría y enlace de contacto -->
+        <footer>
+            
+            <p>Autoria y licencias: Página realizada por Miriam Costoya con fines educativos. Todos los derechos de imágenes están reservados y pertenecen a sus autores</p>
+
+            <a href="contacto.html">Contacto</a>
+        </footer>
+    </body>
+</html>

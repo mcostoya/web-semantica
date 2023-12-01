@@ -1,0 +1,90 @@
+<!--
+Autor: Costoya Fernández, Miriam
+Fecha: 1/12/2023
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio web
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contacto Novo Cinema Galego">
+    <meta name="keywords" content="Cine, Películas">
+    <title>Contacto</title>
+
+    <!-- Hoja de estilo enlazada y tipografía de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado de la página con imagen y enlace a la página de inicio -->
+    <header id="header-background">
+        <a href="index.html">
+            <img src="img/header.jpg" alt="Imagen de fondo" id="inicio">
+            <h1>Novo Cinema Galego</h1>
+        </a>
+    </header>
+    <!-- Sección principal de la página donde se incluyen menús de navegación y formulario de contacto -->
+    <section id="seccion">
+        <!-- Menú de navegación -->
+        <nav>
+            <a href="peliculas.html">Películas</a>
+            <a href="directores.html">Directores</a>
+            <a href="noticias.html">Noticias</a>
+        </nav>
+        <!-- Sección principal de la página con un formulario de contacto -->
+        <main id="formulario">
+            <article>
+                <!-- Formulario de contacto -->
+                <form id="form1" action="index.html">
+                    <fieldset>
+                        <!-- Título del formulario -->
+                        <legend>
+                            <h3>Formulario de contacto</h3>
+                        </legend>
+                        <!-- Campos del formulario -->
+                        <label for="fnamenom1">Nombre:</label><br>
+                        <input type="text" id="fnamenom1" name="nombre1"><br>
+
+                        <label for="fnameapel1">Apellido:</label><br>
+                        <input type="text" id="fnameapel1" name="apellido1"><br>
+
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="text" id="email" name="correo1"><br>
+
+                        <label for="contact">Tipo de solicitud:</label><br>
+                        <!-- Menú desplegable para seleccionar el tipo de solicitud -->
+                        <select name="comunicación">
+                            <option value="info">Información</option>
+                            <option value="recon">Recomendación</option>
+                        </select><br>
+                        <!-- Área de texto para ingresar el mensaje -->
+                        <label for="msg">Mensaje:</label><br>
+                        <textarea id="msg" name="user_message"></textarea><br>
+                        <!-- Botón de enviar el formulario -->
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+        <aside id="categorias">
+            <article><a href="largometraxes.html">Largometrajes</a></article>
+            <article><a href="curtametraxes.html">Cortos</a></article>
+            <article><a href="animación.html">Animación</a></article>
+        </aside>
+    </section>
+
+    <footer>
+        <p>Autoria y licencias: Página realizada por Miriam Costoya con fines educativos. Todos los derechos de imágenes están reservados y pertenecen a sus autores</p>
+        <a href="contacto.html">Contacto</a>
+    </footer>
+</body>
+
+</html>
